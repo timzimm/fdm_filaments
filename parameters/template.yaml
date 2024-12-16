@@ -1,0 +1,58 @@
+################### FUZZYLLI PARAMETERS #########################
+general:
+    output_file: {output_file}
+    cache: {cache}
+    load_if_cached: {load_if_cached}
+    save_cdm: {save_cdm}
+    save_fdm: {save_fdm}
+    save_wdm: {save_wdm}
+    seed: {seed}
+
+cosmology:
+    # FDM mass [1e-22 eV]
+    m22: {m22}
+    # Fit redshift
+    z: {z}
+
+background_density:
+    # Velocity Anisotropy parameter [0,1)
+    beta: {beta}
+    # Radial velocity dispersion in [km/s]
+    sigma: {sigma}
+    # Physical size of scale radius in [Mpc/h]
+    r0: {r0}
+
+phasespace_distribution:
+    # Number of gradient descent steps
+    epochs: {epochs}
+    # minimum fit radius in [cMpc/h]
+    R_min: {R_min}
+
+eigenstate_library:
+    # Number of spatial points at which eigenstates are computed
+    N: {Nlib}
+
+wave_function:
+    # minimization problem [least_square, aLASSO, regPoisson]
+    minimize: {problem}
+    # mass per fiducial sampling particle [Msun/h]
+    mass_per_particle: {mass_per_particle}
+
+
+domain:
+    # Box size [cMpc/h]
+    L: {L}
+    # Number of grid points per dimension
+    N: {N}
+
+filament_ensemble:
+    # length [cMpc/h]
+    length: {length}
+    # total mass of cylinder [Msun/h]
+    mass: {mass}
+    # vector in domain specifying the origin of the cylinder in units of L
+    origin: {origin}
+    # unit vector specifying orintation of cylinder
+    direction: {direction}
+    # direction of x-axis in plane orthogonal to filament spine
+    orientation: {orientation}
