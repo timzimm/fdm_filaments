@@ -3,7 +3,7 @@ Code to reproduce the plots in [arXiv:2412.10829](https://arxiv.org/abs/2412.108
 We kindly ask you to cite this work as:
 ```
 @article{Zimmermann:fdm-filaments,
-author = {{Zimmermann}, Tim and {Marsh}, David J.~E. and {Winther}, Hans A. and {Shen}, Sijing},
+        author = {{Zimmermann}, Tim and {Marsh}, David J.~E. and {Winther}, Hans A. and {Shen}, Sijing},
         title = "{Interference in Fuzzy Dark Matter Filaments: Idealised Models and Statistics}",
          year = 2024,
         month = dec,
