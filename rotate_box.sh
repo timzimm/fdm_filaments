@@ -8,5 +8,5 @@ cd fdmfilaments
 mpirun -x JAX_ENABLE_X64 \
        -x XLA_FLAGS \
        -n $NPROC \
-       python rotate_box.py ${@:2}
+       python ./rotate_box.py ${@:2}
 cd ..

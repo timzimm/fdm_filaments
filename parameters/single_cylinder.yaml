@@ -1,6 +1,6 @@
 general:
-    output_file: ./data/single_cylinder/single_cylinder_high_res.h5
-    cache: ./data/cache
+    output_file: ../data/single_cylinder/single_cylinder_high_res.h5
+    cache: ../data/cache
     load_if_cached: True
     save_cdm: False
     save_fdm: True

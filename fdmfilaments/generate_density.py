@@ -22,18 +22,18 @@ from fuzzylli.filaments import (
 import fuzzylli.wavefunction as psi
 from fuzzylli.potential import AxialSymmetricPotential
 from fuzzylli.density import SteadyStateCylinder
-
-from fuzzylli.io_utils import (
-    create_ds,
-    load_or_compute_model,
-    save_dict_to_group,
-    dictify,
-    load_parameters_from_config,
-)
 from fuzzylli.eigenstates import eigenstate_library, init_eigenstate_library
 from fuzzylli.ray import init_ray_params
 from fuzzylli.cosmology import h
 from fuzzylli.df import ConstantAnisotropyDistribution
+from fuzzylli.io_utils import load_or_compute_model
+
+from fdmfilaments.io_utils import (
+    create_ds,
+    save_dict_to_group,
+    dictify,
+    load_parameters_from_config,
+)
 
 
 def init_wavefunction(

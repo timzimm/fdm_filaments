@@ -2,18 +2,9 @@ import pathlib
 import argparse
 import h5py
 import jax.numpy as jnp
-from jax.config import config
 import numpy as onp
 
 import yt
-
-from yt.visualization.volume_rendering.api import (
-    Scene,
-    Camera,
-    TransferFunctionHelper,
-    create_volume_source,
-)
-
 from unyt import unyt_array
 
 from fuzzylli.domain import UniformHypercube
@@ -21,7 +12,6 @@ from fuzzylli.units import set_schroedinger_units as set_units
 from fuzzylli.cosmology import h
 
 yt.enable_parallelism()
-# config.update("jax_enable_x64", True)
 parser = argparse.ArgumentParser(description="")
 
 parser.add_argument("filename", type=str, help="path to HDF5 file")
